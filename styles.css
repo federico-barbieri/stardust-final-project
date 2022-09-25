@@ -45,7 +45,7 @@ header{
 .stardust-logo{
     width: 10rem;
     padding: 1rem;
-    top: 1.2rem;
+    top: 0.5rem;
     left: 2rem;
     position: absolute;
 }
@@ -70,7 +70,7 @@ nav{
     position: absolute;
     width: 2rem;
     aspect-ratio: 1;
-    top: 2rem;
+    top: 1.5rem;
     right: 2rem;
     z-index: 200;
     color: var(--black);
@@ -131,10 +131,69 @@ nav{
 
 main{
     background-color: var(--green-background);
+    display: grid;
+    width: 100vw;
+    height: auto;
+    grid-template-columns: 1fr;
 }
+
+/* whitespace */
 
 .white-space{
     width: 100%;
-    height: 12vh;
+    height: 10vh;
     background-color: var(--white);
+}
+
+
+/* FIRST-SCREEN */
+
+#first-screen{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 80;
+    background: url("first-screen/mobile/milestone.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(1px 4px 5px black);
+}
+
+h1{
+    color: var(--white);
+    font-family: anisette-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 8vw;
+    width: 80%;
+    height: auto;
+    filter: drop-shadow(1px 4px 5px black);
+    margin: 8rem auto 2rem auto;
+    background-color: var(--black-less-opacity);
+    padding: 1rem;
+}
+
+.first-screen-btn{
+    font-family: dinosaur, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 1rem 1rem;
+    width: 100%;
+    margin: 2rem auto;
+    border-radius: 10px;
+    border: none;
+}
+
+.first-screen-btn:hover{
+    color: var(--black);
+    background-color: var(--white);
+    cursor: pointer;
 }
