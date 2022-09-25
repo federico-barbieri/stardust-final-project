@@ -774,7 +774,7 @@ h3{
     margin: 0 auto;
     max-width: 50ch;
     line-height: 1.5;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: dinosaur, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -1071,7 +1071,7 @@ nav{
     list-style: none;
     text-decoration: none;
     color: var(--white);
-    padding: 1rem 1rem 1rem 0;
+    padding: 1.5rem 1.5rem;
     font-size: 1rem;
 }
 
