@@ -355,6 +355,7 @@ h3{
     font-family: dinosaur, sans-serif;
     font-weight: 300;
     font-style: normal;
+    padding: 2rem 1rem 0rem 1rem;
 }
 
 .norma-p{
@@ -691,6 +692,57 @@ h3{
     font-family: anisette-std, sans-serif;
     font-weight: 300;
     font-style: normal;
+}
+
+
+/* ABOUT SECTION */
+
+#about{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+}
+
+.norma{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0rem auto 0 auto;
+}
+
+.norma-img{
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    filter: drop-shadow(1px 4px 5px var(--green-background-less-opacity));
+    border-radius: 10px;   
+}
+
+.norma-h3{
+    color: var(--white);
+    font-family: dinosaur, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.norma-p{
+    color: var(--white);
+    padding: 0rem 1rem 2rem 1rem;
+    margin: 0 auto;
+    max-width: 50ch;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-family: dinosaur, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    
 }
 
 
