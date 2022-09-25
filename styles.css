@@ -28,6 +28,8 @@ a{
     width: 100%;
     height: 100%;
     position: relative;
+    background-color: var(--green-background);
+    color: var(--white);
 }
 
 
@@ -35,25 +37,22 @@ a{
 
 header{
     width: 100vw;
+    height: 10vh;
     z-index: 100;
     display: flex;
     flex-direction: row;
     align-items: center;
     position: fixed;
+    background-color: yellow;
 }
 
 /* STARDUST LOGO */
 
-.stardust-logo-div{
-    display: flex;
-    width: 20%;
-    
-}
-
 .stardust-logo{
-    width: 5rem;
+    max-width: 9rem;
     padding: 1rem;
-    margin: 0 auto 0 5rem;
+    margin: 0 auto 0 2rem;
+    z-index: 200;
 }
 
 /* NAV */
@@ -83,6 +82,7 @@ nav{
     background-color: transparent;
     border: none;
     display: block;
+    transform: translateY(-.7rem);
 }
 
 .fa-bars{
@@ -107,14 +107,14 @@ nav{
     background: hsl(0% 0% 0% / .1); 
     backdrop-filter: blur(1rem);
     z-index: 100;
-    transform: translateX(100%);
+    transform: translate(100%, 100%);
     transition: transform 350ms ease-out;
 }
 
 /* if NAV UL is actually visible */
 
 #primary-navigation[data-visible="true"]{
-    transform: translateX(0%);
+    transform: translate(0%, 0%);
 }
 
 #primary-navigation > li {
@@ -128,4 +128,17 @@ nav{
     color: var(--black);
     background-color: var(--dark-gray);
     cursor: pointer;
+}
+
+/* main */
+
+main{
+    background-color: var(--dark-gray);
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6;
+    row-gap: var(--gap);
+    padding-top: 10vh;
 }
