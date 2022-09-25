@@ -314,3 +314,52 @@ h3{
     font-style: normal;
 }
   
+
+/* ABOUT SECTION */
+
+#about{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--black);
+}
+
+.norma{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem auto 0 auto;
+}
+
+.norma-img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    filter: drop-shadow(1px 4px 5px var(--green-background-less-opacity));
+    border-radius: 10px;
+}
+
+.norma-h3{
+    color: var(--white);
+    font-family: dinosaur, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.norma-p{
+    color: var(--white);
+    padding: 0rem 1rem 2rem 1rem;
+    margin: 0 auto;
+    max-width: 45ch;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-family: dinosaur, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    
+}
