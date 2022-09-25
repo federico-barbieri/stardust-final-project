@@ -227,7 +227,7 @@ h2{
     overflow-y: hidden;
     white-space: nowrap;
     height: 50vh;
-    width: 80%;
+    width: 100%;
     background-color: transparent;
     filter: drop-shadow(1px 4px 5px black);
 }
