@@ -595,7 +595,7 @@ h1{
     font-family: dinosaur, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 2rem;
     color: var(--white);
     background-color: var(--black);
     padding: 1rem 1rem;
@@ -630,6 +630,7 @@ h2{
     font-style: normal;
     margin-bottom: 2rem;
     filter: drop-shadow(1px 4px 5px black);
+    font-size: 3rem;
 }
 
 
@@ -662,6 +663,8 @@ h3{
     font-family: anisette-std, sans-serif;
     font-weight: 300;
     font-style: normal;
+    font-size: 1.5rem;
+    height: 30%;
 }
 
 /* ACCESSORIES SECTION */
@@ -683,6 +686,7 @@ h2{
     font-style: normal;
     margin-bottom: 2rem;
     filter: drop-shadow(1px 4px 5px black);
+    font-size: 3rem;
 }
 
 
@@ -705,6 +709,13 @@ h2{
     filter: drop-shadow(1px 4px 5px black);
 }
 
+
+
+.card:hover > h3{
+    color: black;
+    background-color: white;
+}
+
 .accessories-img{
     max-width: 100%;
     height: 70%;
@@ -715,6 +726,8 @@ h3{
     font-family: anisette-std, sans-serif;
     font-weight: 300;
     font-style: normal;
+    font-size: 1.5rem;
+    height: 30%;
 }
 
 
@@ -761,7 +774,7 @@ h3{
     margin: 0 auto;
     max-width: 50ch;
     line-height: 1.5;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: dinosaur, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -779,8 +792,10 @@ h3{
     align-items: center;
     justify-content: flex-start;
     background-color: var(--green-background);
-    background: url('first-screen/mobile/junior.webp');
+    background: url('first-screen/desktop/desktop-bikini4.webp');
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 .subscribe-article{
@@ -822,19 +837,18 @@ h3{
     font-family: dinosaur, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1rem;
     color: var(--black);
     background-color: var(--white);
     padding: 1rem 1rem;
     width: 30%;
     margin: 1rem auto;
-    
+    font-size: 2rem;
     border: none;
 }
 
-.first-screen-btn:hover{
-    color: var(--black);
-    background-color: var(--white);
+.subscribe-btn:hover{
+    color: var(--white);
+    background-color: var(--black);
     cursor: pointer;
 }
 
@@ -865,7 +879,6 @@ h3{
     padding: 1rem;
     color: var(--white);
     gap: 2rem;
-    border: 1px dashed white;
 }
 
 .quote-sarah{
@@ -910,12 +923,16 @@ h3{
     display: inline;
 }
 
+.customer-quotes-p{
+    font-size: 1.5rem;
+}
+
 
 /* footer */
 
 footer{
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     background-color: var(--black);
     color: var(--white);
     font-family: dinosaur, sans-serif;
@@ -947,5 +964,120 @@ footer{
     padding-bottom: 2rem;
 }
 
+}
 
+/* MEDIA QUERY 1050 PX */
+/* MEDIA QUERY 1050 PX */
+/* MEDIA QUERY 1050 PX */
+
+@media only screen and (min-width: 1050px){
+    /* HEADER */
+
+header{
+    width: 100vw;
+    height: 15vh;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: var(--green-background);
+}
+
+.white-space{
+    display: none;
+}
+
+/* STARDUST LOGO */
+
+.stardust-logo{
+    width: 15rem;
+    padding: 1rem;
+    top: 0.2rem;
+    left: 2rem;
+    position:static;
+    max-width: 20%;
+}
+
+/* NAV */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    max-width: 80%;
+    font-family: anisette-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 90%;
+    color: var(--white);
+    z-index: 500;
+}
+
+/* NAV BUTTON */
+
+.mobile-nav-toggle{
+    position: absolute;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 1.1rem;
+    right: 2rem;
+    z-index: 200;
+    color: var(--black);
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+
+/* NAV UL */
+
+#primary-navigation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 100%;
+    font-family: anisette-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    gap: var(--gap);
+    color: var(--white);
+    
+    -webkit-backdrop-filter: none; 
+    backdrop-filter: none; 
+    z-index: 600;
+    text-align: center;
+    transform: translateX(0%);
+}
+
+@supports (backdrop-filter: blur(1rem)){
+    #primary-navigation{
+        background: none; 
+        backdrop-filter: none;
+    }
+}
+
+/* if NAV UL is actually visible */
+
+#primary-navigation[data-visible="true"]{
+    transform: translateX(0%);
+}
+
+#primary-navigation > li {
+    list-style: none;
+    text-decoration: none;
+    color: var(--white);
+    padding: 1rem 1rem 1rem 0;
+    font-size: 1rem;
+}
+
+#primary-navigation > li:hover {
+    color: var(--black);
+    background-color: var(--dark-gray);
+    cursor: pointer;
+}
 }

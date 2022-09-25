@@ -1,5 +1,7 @@
 // make burger menu work
 
+let clientWidth = document.getElementById('container').clientWidth;
+
 const primaryNav = document.querySelector('#primary-navigation');
 
 const navToggle = document.querySelector('.mobile-nav-toggle');
@@ -26,6 +28,9 @@ navToggle.addEventListener('click', () => {
         primaryNav.setAttribute('data-visible', false);
         primaryNav.setAttribute('aria-expanded', false);
         navToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    } 
+    else if (visibility === "false" && clientWidth > 800){
+        primaryNav.style.display = "flex";
     }
 })
 
