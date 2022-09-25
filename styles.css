@@ -107,6 +107,14 @@ nav{
     background: hsl(0% 0% 0% / .1); 
     backdrop-filter: blur(1rem);
     z-index: 100;
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+}
+
+/* if NAV UL is actually visible */
+
+#primary-navigation[data-visible="true"]{
+    transform: translateX(0%);
 }
 
 #primary-navigation > li {
