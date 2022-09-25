@@ -521,3 +521,68 @@ footer{
 .stardust-lab-footer{
     max-width: 30%;
 }
+
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 1000px){
+/* FIRST-SCREEN */
+
+#first-screen{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    z-index: 80;
+    background: url("first-screen/mobile/milestone.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(1px 4px 5px black);
+}
+
+h1{
+    color: var(--white);
+    font-family: anisette-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3vw;
+    width: 80%;
+    height: auto;
+    margin: 8rem auto 2rem 5rem;
+    padding: 1rem;
+    filter: none;
+    background-color: none;
+}
+
+.first-form{
+    width: 20%;
+    margin: 0 auto 0 5rem;
+}
+
+.first-screen-btn{
+    display: block;
+    font-family: dinosaur, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--black);
+    padding: 1rem 1rem;
+    width: 90%;
+    margin: 2rem auto;
+    border: none;
+}
+
+.first-screen-btn:hover{
+    color: var(--black);
+    background-color: var(--white);
+    cursor: pointer;
+}
+}
