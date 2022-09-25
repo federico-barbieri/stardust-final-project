@@ -11,7 +11,7 @@ navToggle.addEventListener('click', () => {
     if(visibility === "false"){
 
         // expand and show the navigation
-
+        primaryNav.style.display = "flex";
         primaryNav.setAttribute('data-visible', true);
         primaryNav.setAttribute('aria-expanded', true);
 
@@ -21,6 +21,7 @@ navToggle.addEventListener('click', () => {
         let burgerX = document.querySelector('.fa-x').style.transform = "scale(2)";
 
     } else if (visibility === "true"){
+        primaryNav.style.display = "none";
         primaryNav.setAttribute('data-visible', false);
         primaryNav.setAttribute('aria-expanded', false);
         navToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
