@@ -19,6 +19,7 @@ navToggle.addEventListener('click', () => {
 
         navToggle.innerHTML = '<i class="fa-solid fa-x"></i>';
         let burgerX = document.querySelector('.fa-x').style.transform = "scale(2)";
+        let burgerWhite = document.querySelector('.fa-x').style.color = "white";
 
     } else if (visibility === "true"){
         primaryNav.style.display = "none";
