@@ -100,15 +100,21 @@ nav{
     font-weight: 400;
     font-style: normal;
     gap: var(--gap);
-    color: var(--black);
-    background: hsl(0% 0% 0% / .1); 
-    backdrop-filter: blur(1rem);
+    color: var(--green-background);
+    background: hsl(0% 0% 0% / .75); 
+    
     z-index: 100;
     text-align: left;
     transform: translateX(120%);
     transition: transform 350ms ease-out;
     display: none;
-    
+}
+
+@supports (backdrop-filter: blur(1rem)){
+    #primary-navigation{
+        background: hsl(0% 0% 0% / .1); 
+        backdrop-filter: blur(1rem);
+    }
 }
 
 /* if NAV UL is actually visible */
