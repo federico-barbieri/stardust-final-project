@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 16px;
+    --white: #ffffff;
+    --black: #000000;
+    --black-less-opacity: #00000080;
+    --green-background: #252C28;
+    --green-background-less-opacity: #252C28AA;
+    --dark-gray: #a9a9a9;
+    --dark-gray-less-opacity: #a9a9a9AA;
+    --gap: 3rem;
+}
+
+/* ANCHORS */
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* CONTAINER */
+
+#container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+/* HEADER */
+
+header{
+    width: 100vw;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+}
+
+/* STARDUST LOGO */
+
+.stardust-logo-div{
+    display: flex;
+    width: 20%;
+    
+}
+
+.stardust-logo{
+    width: 5rem;
+    padding: 1rem;
+    margin: 0 auto 0 5rem;
+}
+
+/* NAV */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: anisette-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 80%;
+    color: var(--white);
+}
+
+/* NAV BUTTON */
+
+.mobile-nav-toggle{
+    position: absolute;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+    z-index: 200;
+    color: var(--black);
+    background-color: transparent;
+    border: none;
+    display: block;
+}
+
+.fa-bars{
+    transform: scale(2);
+    
+}
+
+/* NAV UL */
+
+#primary-navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    font-family: anisette-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    gap: var(--gap);
+    color: var(--black);
+    background: hsl(0% 0% 0% / .1); 
+    backdrop-filter: blur(1rem);
+    z-index: 100;
+}
+
+#primary-navigation > li {
+    list-style: none;
+    text-decoration: none;
+    color: var(--black);
+    padding: 1rem;
+}
+
+#primary-navigation > li:hover {
+    color: var(--black);
+    background-color: var(--dark-gray);
+    cursor: pointer;
+}
