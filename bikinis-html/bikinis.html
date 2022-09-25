@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
 
-    <!-- FONT AWESOME -->
-    <script src="https://kit.fontawesome.com/53fa46f6ac.js" crossorigin="anonymous"></script>
+     <!-- FONT AWESOME -->
+     <script src="https://kit.fontawesome.com/53fa46f6ac.js" crossorigin="anonymous"></script>
 
-    <!-- adobe fonts-->
-    <link rel="stylesheet" href="https://use.typekit.net/vyr5cgx.css">
-
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles.css">
+     <!-- adobe fonts-->
+     <link rel="stylesheet" href="https://use.typekit.net/vyr5cgx.css">
+ 
+     <!-- AOS -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ 
+     <link rel="stylesheet" href="bikinis.css">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stardust Lab</title>
+    <title>Bikinis</title>
 </head>
 <body>
 
@@ -25,7 +25,7 @@
         <header>
 
             
-            <img class="stardust-logo" src="logo/stardust-logo-white.svg" alt="Logo of Stardust Lab.">
+            <img class="stardust-logo" src="../logo/stardust-logo-white.svg" alt="Logo of Stardust Lab.">
             
             
             <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
@@ -34,7 +34,7 @@
 
             <nav>
                 <ul id="primary-navigation" data-visible="false">
-                    <li><a href="">BIKINIS</a></li>
+                    <li><a href=""><strong>BIKINIS</strong></a></li>
                     <li><a href="">TRUNCS</a></li>
                     <li><a href="">ACCESSORIES</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -52,31 +52,48 @@
 
             <section id="first-screen">
 
-                 <h1>REACH YOUR MILESTONE IN STYLE</h1>
-
-             <form class="first-form" action="products.html">
-                <button class="first-screen-btn" type="button">START YOUR JOURNEY</button>
-             </form>
+                 <h1>BIKINIS</h1>
 
             </section>
 
-            <!-- BIKINIS SECTION -->
+            <!-- BUTTONS SECTION -->
 
-            <section id="bikinis">
+            <section id="buttons">
 
-                <h2>BIKINIS</h2>
+                <div class="buttons-btns">
+
+                <form class="rental-btn-form" action="#rental-bikinis">
+                    <button class="rental-btn" type="button">RENTAL</button>
+                 </form>
+
+                 <form class="ready-btn-form" action="#ready-bikinis">
+                    <button class="ready-btn" type="button">READY TO SHIP</button>
+                 </form>
+
+                 <form class="customize-btn-form" action="#customize-bikinis">
+                    <button class="customize-btn" type="button">CUSTOMIZE</button>
+                 </form>
+
+                </div>
+
+                <p class="buttons-p">Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Laborum, tenetur impedit animi magnam nemo, 
+                    dolorem eveniet placeat molestiae necessitatibus ab incidunt quidem 
+                    fugiat, voluptas sit iste aperiam ipsum minus maxime.</p>
+
+            </section>
 
             <div class="scrolling-wrapper">
                 <div class="card">
-                    <img class="bikini-img" src="products/bikinis/rental/orange.webp" alt="">
+                    <img class="bikini-img" src="../products/bikinis/rental/orange.webp" alt="">
                     <h3>RENT</h3>
                 </div>
                 <div class="card">
-                    <img class="bikini-img" src="products/bikinis/ready/blue.webp" alt="">
+                    <img class="bikini-img" src="../products/bikinis/ready/blue.webp" alt="">
                     <h3>Ready to ship</h3>
                 </div>
                 <div class="card">
-                    <img class="bikini-img" src="products/bikinis/ready/yellow.webp" alt="">
+                    <img class="bikini-img" src="../products/bikinis/ready/yellow.webp" alt="">
                     <h3>Customize</h3>
                 </div>
               </div>
@@ -92,15 +109,15 @@
 
             <div class="scrolling-wrapper">
                 <div class="card">
-                    <img class="accessories-img" src="products/accessories/brace2.webp" alt="">
+                    <img class="accessories-img" src="../products/accessories/brace2.webp" alt="">
                     <h3>Jewelry</h3>
                 </div>
                 <div class="card">
-                    <img class="accessories-img" src="products/accessories/gala.webp" alt="">
+                    <img class="accessories-img" src="../products/accessories/gala.webp" alt="">
                     <h3>Shoes</h3>
                 </div>
                 <div class="card">
-                    <img class="accessories-img" src="products/accessories/tan1.webp" alt="">
+                    <img class="accessories-img" src="../products/accessories/tan1.webp" alt="">
                     <h3>Tan</h3>
                 </div>
               </div>
@@ -115,7 +132,7 @@
 
                 <article class="norma">
 
-                    <img class="norma-img" src="norma/norma-horizontal.webp" alt="An image of Norma.">
+                    <img class="norma-img" src="../norma/norma-horizontal.webp" alt="An image of Norma.">
 
                    <div>
                     <h3 class="norma-h3">Hi, I'm Norma!</h3>
@@ -218,20 +235,22 @@
             
             </section>
 
-            <img class="stardust-lab-footer" src="logo/stardust-logo-white.svg" alt="Logo of Stardust Lab">
+            <img class="stardust-lab-footer" src="../logo/stardust-logo-white.svg" alt="Logo of Stardust Lab">
             
         </footer>
 
     </div>  
     
 
-    <script src="burger.js"></script>
-    <script src="carousel.js"></script>
+
+    <script src="../burger.js"></script>
+    <script src="../carousel.js"></script>
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <script>
         AOS.init();
       </script>
+    
 </body>
 </html>
