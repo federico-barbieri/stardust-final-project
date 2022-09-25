@@ -263,95 +263,57 @@ h1{
     text-align: left;
 }
 
+/* RENTALS SECTION */
 
-h2{
-    font-family: anisette-std, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    margin-bottom: 2rem;
-    filter: drop-shadow(1px 4px 5px black);
-}
-
-
-.scrolling-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    height: 50vh;
-    width: 100%;
-    background-color: transparent;
-    filter: drop-shadow(1px 4px 5px black);
-}
-  
-.card {
-      display: inline-block;
-      border: 1px solid white;
-      height: 80%;
-      max-width: 50%;
-      border-radius: 10px;
-      margin: 2rem auto;
-      text-align: center;
-      filter: drop-shadow(1px 4px 5px black);
-}
-
-.bikini-img{
-    max-width: 100%;
-    height: 70%;
-}
-
-h3{
-    padding-top: 2rem;
-    font-family: anisette-std, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-/* ACCESSORIES SECTION */
-
-#accessories{
+#rentals{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: auto;
     background-color: var(--green-background);
     color: var(--white);
     text-align: center;
 }
 
-h2{
+.rentals-h2{
     font-family: anisette-std, sans-serif;
     font-weight: 300;
     font-style: normal;
-    margin-bottom: 2rem;
+    width: 100%;
+    margin: 3rem auto;
     filter: drop-shadow(1px 4px 5px black);
 }
 
-
-.scrolling-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    height: 50vh;
+.rentals-grid{
     width: 100%;
-    background-color: transparent;
-    filter: drop-shadow(1px 4px 5px black);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
 }
   
 .card {
-    display: inline-block;
-    border: 1px solid white;
-    height: 80%;
-    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
     border-radius: 10px;
     margin: 2rem auto;
     text-align: center;
     filter: drop-shadow(1px 4px 5px black);
+
 }
 
-.accessories-img{
-    max-width: 100%;
-    height: 70%;
+.rentals-template-img{
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 50%;
+    margin: 0 auto;
+    filter: drop-shadow(1px 4px 5px black);
 }
 
 h3{
