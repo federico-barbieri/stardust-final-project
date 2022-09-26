@@ -484,18 +484,20 @@ footer{
 
 #first-screen{
     width: 100vw;
-    height: 80vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     position: relative;
     z-index: 80;
+    background-color: var(--dark-gray-less-opacity);
+    /*
     background: url("imgs/norma-vertical.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    
+    */
 }
 
 h1{
