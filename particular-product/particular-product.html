@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <!-- FONT AWESOME -->
+     <script src="https://kit.fontawesome.com/53fa46f6ac.js" crossorigin="anonymous"></script>
+
+     <!-- adobe fonts-->
+     <link rel="stylesheet" href="https://use.typekit.net/vyr5cgx.css">
+ 
+     <!-- AOS -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ 
+     <link rel="stylesheet" href="particular-product.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+</head>
+<body>
+
+
+    <div id="container">
+
+        <header>
+
+            
+            <img class="stardust-logo" src="../logo/stardust-logo-white.svg" alt="Logo of Stardust Lab.">
+            
+            
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav>
+                <ul id="primary-navigation" data-visible="false">
+                    <li><a href=""><strong>BIKINIS</strong></a></li>
+                    <li><a href="">TRUNCS</a></li>
+                    <li><a href="">ACCESSORIES</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+
+            <div class="white-space"></div>
+
+            <!-- PARTICULAR-PRODUCT SECTION -->
+
+            <section id="particular-product">
+
+                <div class="go-back-div">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <button class="go-back-btn" type="button">GO BACK</button>
+
+                </div>
+
+                <div class="bye-later"></div>
+
+                <template class="particular-product-template">
+                    <article class="particular-product-card">
+                        <img class="particular-product-img" src="" alt="">
+                        <h3 class="particular-product-h3"></h3>
+                        <p class="particular-product-p"></p>
+                    </article>
+                </template>
+
+                <form class="size-form" action="#">
+                    <label class="size-label" for="size-thing">Size</label>
+                    <select class="size-select" name="size-thing" id="">
+                        <option value="0">Choose size</option>
+                        <option value="1">S</option>
+                        <option value="2">M</option>
+                        <option value="3">L</option>
+                    </select>
+
+                    <button class="basket-btn" type="submit">ADD TO BASKET</button>
+
+                </form>
+
+                <hr class="hr-in-between">
+
+
+            </section>
+
+            <!-- DESCRIPTION SECTION -->
+
+            <section id="description">
+
+                <h3 class="description-h3">Description</h3>
+
+                <p class="description-p">Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Itaque aperiam, vero atque doloremque placeat, 
+                    distinctio adipisci, id omnis aut dicta voluptatum repellendus minima 
+                    nulla quaerat dignissimos quam eius nesciunt ipsum?</p>
+
+            </section> 
+
+             <!-- RELATED SECTION -->
+
+             <section id="related">
+
+                <h4 class="related-h4">Related products</h4>
+
+                <div class="related-imgs">
+
+                <div class="related-img1">
+                    <img src="img/green.webp" alt="">
+                    <p>Green bikini</p>
+                    <p>800 dkk</p>
+                </div>
+                <div class="related-img2">
+                    <img src="img/red.webp" alt="">
+                    <p>Red bikini</p>
+                    <p>800 dkk</p>
+                </div>        
+                
+                </div>
+            
+
+            </section> 
+
+
+        
+        </main>
+
+        
+        <footer>
+
+            <section class="social-icons">
+            
+                <i class="fa-brands fa-facebook logo"></i>
+                <i class="fa-brands fa-instagram logo"></i>
+                <i class="fa-solid fa-envelope logo"></i>
+            
+            </section>
+
+            <img class="stardust-lab-footer" src="../logo/stardust-logo-white.svg" alt="Logo of Stardust Lab">
+            
+        </footer>
+
+    </div>  
+    
+
+    <script src="particular-product.js"></script>
+    <script src="../burger.js"></script>
+
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init();
+      </script>
+
+    
+    
+</body>
+</html>
