@@ -31,7 +31,7 @@ navToggle.addEventListener('click', () => {
     } 
     else if (visibility === "false" && clientWidth > 800){
         primaryNav.style.display = "flex";
-    }
+    } 
 })
 
 //

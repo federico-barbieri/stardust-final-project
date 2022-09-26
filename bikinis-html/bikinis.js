@@ -47,29 +47,51 @@ function handleData(stardustData){
 
         if (bikini.Category == "Rental"){
 
+            //
+            // I'M PUTTING BOTH RENTALS AND READY WITH THE SAME BIKINIS
+            // FOR NUMBERS' SAKE
+            //
+
             let rentalTemplate = document.querySelector('.rentals-template').content;
 
+            let readyTemplate = document.querySelector('.ready-template').content;
+
             // clone it
+
             let clone = rentalTemplate.cloneNode(true);
+
+            let readyClone = readyTemplate.cloneNode(true);
+
 
              // add the image of the product
 
              clone.querySelector('img').src = bikini.img;
 
+             readyClone.querySelector('img').src = bikini.img;
+
 
             // add the name of the product
 
             clone.querySelector('h3').textContent = bikini.Name; 
+
+            readyClone.querySelector('h3').textContent = bikini.Name;
             
             // add the price of the product
 
             clone.querySelector('p').textContent = `${bikini.Price} DKK`; 
+
+            readyClone.querySelector('p').textContent = `${bikini.Price} DKK`;
 
             // append to parent
 
             let daddy = document.querySelector(".rentals-grid");
 
             daddy.appendChild(clone); 
+
+            let readyDaddy = document.querySelector(".ready-grid");
+
+            readyDaddy.appendChild(readyClone); 
+
         }
     }) 
 }

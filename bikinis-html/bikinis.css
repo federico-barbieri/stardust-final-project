@@ -281,7 +281,9 @@ h1{
     font-weight: 300;
     font-style: normal;
     width: 100%;
-    margin: 3rem auto;
+    padding: 1rem;
+    background-color: var(--dark-gray-less-opacity);
+    margin: 5rem auto 3rem auto;
     filter: drop-shadow(1px 4px 5px black);
 }
 
@@ -294,7 +296,7 @@ h1{
     margin: 0 auto;
 }
   
-.card {
+.rentals-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -316,7 +318,69 @@ h1{
     filter: drop-shadow(1px 4px 5px black);
 }
 
-h3{
+.rentals-h3{
+    padding-top: 2rem;
+    font-family: anisette-std, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* READY SECTION */
+
+#ready{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: var(--green-background);
+    color: var(--white);
+    text-align: center;
+}
+
+.ready-h2{
+    font-family: anisette-std, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--dark-gray-less-opacity);
+    margin: 5rem auto 3rem auto;
+    filter: drop-shadow(1px 4px 5px black);
+}
+
+.ready-grid{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+}
+  
+.ready-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    margin: 2rem auto;
+    text-align: center;
+    filter: drop-shadow(1px 4px 5px black);
+
+}
+
+.ready-template-img{
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 50%;
+    margin: 0 auto;
+    filter: drop-shadow(1px 4px 5px black);
+}
+
+.ready-h3{
     padding-top: 2rem;
     font-family: anisette-std, sans-serif;
     font-weight: 300;
@@ -324,59 +388,9 @@ h3{
 }
   
 
-/* ABOUT SECTION */
+/* customize SECTION */
 
-#about{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: var(--black);
-}
-
-.norma{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0rem auto 0 auto;
-}
-
-.norma-img{
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    filter: drop-shadow(1px 4px 5px var(--green-background-less-opacity));
-    border-radius: 10px;
-}
-
-.norma-h3{
-    color: var(--white);
-    font-family: dinosaur, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    padding: 2rem 1rem 0rem 1rem;
-}
-
-.norma-p{
-    color: var(--white);
-    padding: 0rem 1rem 2rem 1rem;
-    margin: 0 auto;
-    max-width: 45ch;
-    line-height: 1.5;
-    font-size: 1rem;
-    font-family: dinosaur, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    
-}
-
-/* SUBSCRIBE SECTION */
-
-#subscribe{
+#customize{
     width: 100%;
     height: 70vh;
     display: flex;
@@ -386,42 +400,52 @@ h3{
     background-color: var(--green-background);
     background: url('first-screen/mobile/junior.webp');
     background-position: center;
+    margin: 0 auto;
 }
 
-.subscribe-article{
-    width: 80%;
-    height: 50vh;
-    border-radius: 10px;
+.customize-article{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 5rem auto 0 auto;
     text-align: center;
-    background: rgba(255, 255, 255, 0.23);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.57);
+    background: var(--dark-gray);
+    color: var(--black);
     padding: 1rem;
 }
 
-.subscribe-h2{
+.customize-h2{
     color: var(--black);
     font-family: dinosaur, sans-serif;
     font-weight: 600;
     font-style: normal;
     filter: none;
+    width: 90%;
+    margin: 0rem auto 3rem auto;
+    text-align: left;
 }
 
-.performance{
+.customize-p{
+    color: var(--black);
+    font-family: dinosaur, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    filter: none;
+    width: 90%;
+    margin: 0rem auto 2rem auto;
+    text-align: left;
+}
+
+.custom-span{
     color: var(--gold);
     background-color: var(--black);
     padding: 0.1rem 0.2rem;
 }
 
-.subscribe-btn{
+.customize-btn{
     font-family: dinosaur, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -429,87 +453,19 @@ h3{
     color: var(--black);
     background-color: var(--white);
     padding: 1rem 1rem;
-    width: 50%;
+    width: 60%;
     margin: 1rem auto;
     border: none;
 }
 
-.first-screen-btn:hover{
+.customize-btn:hover{
     color: var(--black);
     background-color: var(--white);
     cursor: pointer;
 }
 
 
-/* QUOTES SECTION */
 
-#quotes{
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--green-background);
-    background-position: center;
-}
-
-.quotes-article{
-    width: 80%;
-    height: 50vh;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0rem auto 0 auto;
-    text-align: center;
-    padding: 1rem;
-    color: var(--white);
-    gap: 2rem;
-}
-
-.quote-sarah{
-    background-color: var(--black-less-opacity);
-    font-family: dinosaur, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    filter: none;
-    padding: 1rem;
-    filter: drop-shadow(1px 4px 5px black);
-}
-
-.quote-zina{
-    background-color: var(--black-less-opacity);
-    font-family: dinosaur, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    filter: none;
-    padding: 1rem;
-    filter: drop-shadow(1px 4px 5px black);
-}
-
-.quote-clara{
-    background-color: var(--black-less-opacity);
-    font-family: dinosaur, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    filter: none;
-    padding: 1rem;
-    filter: drop-shadow(1px 4px 5px black);
-    display: none;
-}
-
-.quote-monica{
-    background-color: var(--black-less-opacity);
-    font-family: dinosaur, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    filter: none;
-    padding: 1rem;
-    filter: drop-shadow(1px 4px 5px black);
-    display: none;
-}
 
 
 /* footer */
