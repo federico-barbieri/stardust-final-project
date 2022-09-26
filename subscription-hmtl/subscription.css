@@ -404,56 +404,37 @@ h3{
     font-style: normal;
 }
 
-/* BUTTONS SECTION */
+/* HELP SECTION */
 
-#buttons{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 80vh;
-    background-color: var(--black);
-    color: var(--white);
-    text-align: center;
-}
-
-.buttons-btns{
-    width: 100%;
-    height: 100%;
+#help{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 80vh;
+    background-color: var(--green-background);
+    color: var(--white);
+    text-align: center;
 }
 
-.rental-btn-form, .ready-btn-form, .customize-btn-form{
+.help-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-}
-
-.buttons-rental-btn, .buttons-ready-btn, .buttons-customize-btn{
-    font-family: dinosaur, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1rem;
-    color: var(--black);
-    background-color: var(--white);
-    padding: 1rem 2rem;
-    width: 60%;
-    margin: 1rem auto;
-    border: none;
-}
-
-.buttons-rental-btn:hover, .buttons-ready-btn:hover, .buttons-customize-btn:hover{
+    height: 50vh;
     background-color: var(--black);
     color: var(--white);
-    cursor: pointer;
+    text-align: center;
+    filter: drop-shadow(1px 4px 5px black);
 }
 
-.buttons-p{
+.help-p{
     color: var(--white);
     padding: 0rem 1.5rem 3rem 1.5rem;
     margin: 0 auto;
-    max-width: 40ch;
+    max-width: 80%;
     line-height: 1.5;
     font-size: 1rem;
     font-family: dinosaur, sans-serif;
