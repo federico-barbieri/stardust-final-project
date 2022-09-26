@@ -711,9 +711,10 @@ h2{
 
 
 
-.card:hover > h3{
+.card:hover > h3, .accessories-img{
     color: black;
     background-color: white;
+    cursor: pointer;
 }
 
 .accessories-img{
@@ -957,6 +958,10 @@ footer{
 
 .logo{
     transform: scale(3);
+}
+
+.logo:hover{
+    cursor: pointer;
 }
 
 .stardust-lab-footer{

@@ -29,14 +29,25 @@ navToggle.addEventListener('click', () => {
         primaryNav.setAttribute('aria-expanded', false);
         navToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
     } 
-    else if (visibility === "false" && clientWidth > 800){
-        primaryNav.style.display = "flex";
-    } 
+  //  else if (visibility === "false" && clientWidth > 800){
+  //      primaryNav.style.display = "flex";
+  //  } 
+  //  else if (visibility === "true" && clientWidth > 800){
+  //      primaryNav.style.display = "flex";
+  //  } 
 })
 
+if(clientWidth > 1000){
+    primaryNav.style.display = "flex";
+}
+
 //
 //
 //
 
 
 
+/// 
+///
+///
+///  
