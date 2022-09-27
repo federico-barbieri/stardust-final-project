@@ -189,7 +189,7 @@ main{
     justify-content: center;
     position: relative;
     z-index: 80;
-    background: url("first-screen/mobile/milestone.webp");
+    background: url("first-screen/milestone/milestone-vertical.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -592,7 +592,7 @@ footer{
     justify-content: center;
     position: relative;
     z-index: 80;
-    background: url("first-screen/mobile/milestone.webp");
+    background: url("first-screen/milestone/milestone-horizontal.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

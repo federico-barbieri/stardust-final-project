@@ -15,118 +15,78 @@ function changeScreen1 () {
     // if screen is smaller than 1000px then stick to the vertical imgs
 
     if(clientWidth <= 460){
-    firstScreen.style.background = "url('first-screen/mobile/success.webp')";
+    firstScreen.style.background = "url('first-screen/success/success-vertical.webp')";
     firstScreen.style.backgroundPosition = "center";
     firstScreen.style.backgroundSize = "cover";
     textH1.textContent = "SUCCESS AS A WAY OF LIVING";
-    } else if (clientWidth > 460 && clientWidth < 600) {
+    } else if (clientWidth > 460) {
 
     // if desktop, use horizontal
     
-    firstScreen.style.background = "url('first-screen/mobile/success.webp')";
+    firstScreen.style.background = "url('first-screen/success/success-vertical.webp')";
     firstScreen.style.backgroundPosition = "top";
     firstScreen.style.backgroundSize = "cover";
     firstScreen.style.backgroundRepeat = "no-repeat";
     textH1.textContent = "SUCCESS AS A WAY OF LIVING";
     }
-
-    else if (clientWidth > 460 && clientWidth < 600) {
-
-        // if desktop, use horizontal
-        
-        firstScreen.style.background = "url('first-screen/desktop/desktop-bikini4.webp')";
-        firstScreen.style.backgroundPosition = "center";
-        firstScreen.style.backgroundSize = "cover";
-        firstScreen.style.backgroundRepeat = "no-repeat";
-        textH1.textContent = "SUCCESS AS A WAY OF LIVING";
-        }
 }
 
 
 function changeScreen2 () {
 
     if(clientWidth <= 460){
-    firstScreen.style.background = "url('first-screen/mobile/junior.webp')";
+    firstScreen.style.background = "url('first-screen/junior/junior-vertical.webp')";
     firstScreen.style.backgroundPosition = "center";
     firstScreen.style.backgroundSize = "cover";
     textH1.textContent = "FIRST STEPS ARE THE SHINIEST";
-    } else if (clientWidth > 460 && clientWidth < 600) {
+    } else if (clientWidth > 460) {
 
         // if desktop, use horizontal
         
-        firstScreen.style.background = "url('first-screen/mobile/junior.webp')";
+        firstScreen.style.background = "url('first-screen/junior/junior-vertical.webp')";
         firstScreen.style.backgroundPosition = "center";
         firstScreen.style.backgroundSize = "cover";
         firstScreen.style.backgroundRepeat = "no-repeat";
         textH1.textContent = "FIRST STEPS ARE THE SHINIEST";
         }
-        else if (clientWidth > 600) {
-
-            // if desktop, use horizontal
-            
-            firstScreen.style.background = "url('first-screen/desktop/desktop-bikini3.webp')";
-            firstScreen.style.backgroundPosition = "center";
-            firstScreen.style.backgroundSize = "cover";
-            firstScreen.style.backgroundRepeat = "no-repeat";
-            textH1.textContent = "FIRST STEPS ARE THE SHINIEST";
-            }
     }
 
 
 function changeScreen3 () {
     if(clientWidth <= 460){
-    firstScreen.style.background = "url('first-screen/mobile/card.webp')";
+    firstScreen.style.background = "url('first-screen/pro/pro-vertical.webp')";
     firstScreen.style.backgroundPosition = "center";
     firstScreen.style.backgroundSize = "cover";
     textH1.textContent = "BIG DREAMS AHEAD";
-    } else if (clientWidth > 460 && clientWidth < 600) {
+    } else if (clientWidth > 460) {
 
         // if desktop, use horizontal
         
-        firstScreen.style.background = "url('first-screen/mobile/card.webp')";
+        firstScreen.style.background = "url('first-screen/pro/pro-horizontal.webp')";
         firstScreen.style.backgroundPosition = "center";
         firstScreen.style.backgroundSize = "cover";
         firstScreen.style.backgroundRepeat = "no-repeat";
         textH1.textContent = "BIG DREAMS AHEAD";
         }
-    else if (clientWidth > 600){
 
-        // if desktop, use horizontal
-        
-        firstScreen.style.background = "url('first-screen/desktop/desktop-bikini.webp')";
-        firstScreen.style.backgroundPosition = "center";
-        firstScreen.style.backgroundSize = "cover";
-        firstScreen.style.backgroundRepeat = "no-repeat";
-        textH1.textContent = "BIG DREAMS AHEAD";
-        }
 }
 
 function changeScreen4 () {
     if(clientWidth <= 460){
-    firstScreen.style.background = "url('first-screen/mobile/milestone.webp')";
+    firstScreen.style.background = "url('first-screen/milestone/milestone-vertical.webp')";
     firstScreen.style.backgroundPosition = "center";
     firstScreen.style.backgroundSize = "cover";
     textH1.textContent = "REACH YOUR MILESTONE IN STYLE";
-    } else if (clientWidth > 460 && clientWidth < 600) {
+    } else if (clientWidth > 460) {
 
         // if desktop, use horizontal
         
-        firstScreen.style.background = "url('first-screen/mobile/milestone.webp')";
+        firstScreen.style.background = "url('first-screen/milestone/milestone-horizontal.webp')";
         firstScreen.style.backgroundPosition = "top";
         firstScreen.style.backgroundSize = "cover";
         firstScreen.style.backgroundRepeat = "no-repeat";
         textH1.textContent = "REACH YOUR MILESTONE IN STYLE";
         } 
-        else if (clientWidth > 600) {
-
-            // if desktop, use horizontal
-            
-            firstScreen.style.background = "url('first-screen/desktop/desktop-bikini2.webp')";
-            firstScreen.style.backgroundPosition = "center";
-            firstScreen.style.backgroundSize = "cover";
-            firstScreen.style.backgroundRepeat = "no-repeat";
-            textH1.textContent = "REACH YOUR MILESTONE IN STYLE";
-            }
 }
 
 function everything(){
