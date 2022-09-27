@@ -132,7 +132,7 @@ nav{
     list-style: none;
     text-decoration: none;
     color: var(--white);
-    padding: 1rem 1rem 1rem 0;
+    padding: 1.5rem 1.5rem;
     font-size: 1rem;
 }
 
@@ -653,6 +653,12 @@ h2{
       filter: drop-shadow(1px 4px 5px black);
 }
 
+.card:hover > h3, .bikini-img{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
 .bikini-img{
     max-width: 100%;
     height: 70%;
@@ -997,10 +1003,10 @@ header{
 /* STARDUST LOGO */
 
 .stardust-logo{
-    width: 15rem;
+    width: 20rem;
     padding: 1rem;
-    top: 0.2rem;
-    left: 2rem;
+    padding-left: 3rem;
+
     position:static;
     max-width: 20%;
 }
