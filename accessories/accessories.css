@@ -23,6 +23,18 @@ a{
     text-decoration: none;
 }
 
+@keyframes bg-animation {
+    0% {
+      background-position: left;
+    }
+    50% {
+      background-position: right;
+    }
+    100% {
+      background-position: left;
+    }
+  }
+
 /* CONTAINER */
 
 #container{
@@ -42,7 +54,9 @@ header{
     z-index: 100;
     display: flex;
     position: fixed;
-    background-color: var(--green-background-less-opacity);
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
 }
 
 /* STARDUST LOGO */
@@ -145,7 +159,9 @@ nav{
 /* MAIN */
 
 main{
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     width: 100%;
     height: auto;
 }
@@ -239,7 +255,9 @@ filter: drop-shadow(1px 4px 5px black);
     align-items: center;
     justify-content: center;
     height: auto;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--white);
     text-align: center;
 }
@@ -301,7 +319,9 @@ filter: drop-shadow(1px 4px 5px black);
     align-items: center;
     justify-content: center;
     height: auto;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--white);
     text-align: center;
 }
@@ -363,7 +383,9 @@ filter: drop-shadow(1px 4px 5px black);
     align-items: center;
     justify-content: center;
     height: auto;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--white);
     text-align: center;
 }
@@ -487,7 +509,7 @@ h1{
     font-weight: 700;
     font-style: normal;
     font-size: 3vw;
-    width: 30%;
+    width: 40%;
     filter: drop-shadow(1px 4px 5px black);
     height: auto;
     margin: 8rem auto 2rem 5rem;
@@ -564,7 +586,9 @@ h1{
     align-items: center;
     justify-content: center;
     height: auto;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--white);
     text-align: center;
 }
@@ -630,7 +654,9 @@ h1{
     align-items: center;
     justify-content: center;
     height: auto;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--white);
     text-align: center;
 }
@@ -695,7 +721,9 @@ h1{
     align-items: center;
     justify-content: center;
     height: auto;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--white);
     text-align: center;
 }
@@ -739,8 +767,8 @@ h1{
 
 .tan-template-img{
     max-width: 50%;
-    max-height: auto;
-    border-radius: 50%;
+    max-height: 50%;
+    border-radius: 10px;
     margin: 0 auto;
     filter: drop-shadow(1px 4px 5px black);
 }
@@ -788,13 +816,6 @@ footer{
     padding-bottom: 2rem;
 }
 
-}
-
-/* MEDIA QUERY 1050 PX */
-/* MEDIA QUERY 1050 PX */
-/* MEDIA QUERY 1050 PX */
-
-@media only screen and (min-width: 1200px){
     /* HEADER */
 
 header{
@@ -806,7 +827,9 @@ header{
     align-items: center;
     justify-content: space-between;
     position: relative;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
 }
 
 /* STARDUST LOGO */
