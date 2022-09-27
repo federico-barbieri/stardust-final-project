@@ -1,6 +1,6 @@
 // make burger menu work
 
-let clientWidth = document.getElementById('container').clientWidth;
+let clientWidths = document.getElementById('container').clientWidth;
 
 const primaryNav = document.querySelector('#primary-navigation');
 
@@ -37,7 +37,7 @@ navToggle.addEventListener('click', () => {
   //  } 
 })
 
-if(clientWidth > 1000){
+if(clientWidths > 1000){
     primaryNav.style.display = "flex";
 }
 

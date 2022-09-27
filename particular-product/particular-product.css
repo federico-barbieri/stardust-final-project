@@ -201,8 +201,9 @@ main{
 
 .particular-product-template{
     width: 90vw;
-    height: 50%;
+    height: 40%;
     border: 2px solid white;
+    margin: 0 auto 2rem 1rem;
 }
 
 
