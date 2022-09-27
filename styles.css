@@ -142,21 +142,40 @@ nav{
     cursor: pointer;
 }
 
+@keyframes bg-animation {
+    0% {
+      background-position: left;
+    }
+    50% {
+      background-position: right;
+    }
+    100% {
+      background-position: left;
+    }
+  }
+
 /* MAIN */
 
 main{
-    background-color: var(--green-background);
+
+    /* background-color: var(--green-background); */
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     width: 100%;
     height: auto;
 }
 
 /* whitespace */
 
-.white-space{
+.white-space {
     width: 100%;
     height: 10vh;
-    background-color: var(--green-background);
-}
+    /* background-color: var(--green-background); */
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
+  }
 
 
 /* FIRST-SCREEN */
@@ -212,16 +231,19 @@ h1{
 
 /* BIKINIS SECTION */
 
-#bikinis{
+#bikinis {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 80vh;
-    background-color: var(--green-background);
+    /* background-color: var(--green-background); */
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--white);
     text-align: center;
-}
+  }
 
 h2{
     font-family: anisette-std, sans-serif;
@@ -267,16 +289,19 @@ h3{
 
 /* ACCESSORIES SECTION */
 
-#accessories{
+#accessories {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 80vh;
-    background-color: var(--green-background);
+    /* background-color: var(--green-background); */
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--white);
     text-align: center;
-}
+  }
 
 h2{
     font-family: anisette-std, sans-serif;
@@ -441,16 +466,19 @@ h3{
 
 /* QUOTES SECTION */
 
-#quotes{
+#quotes {
     width: 100%;
     height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--green-background);
+    /* background-color: var(--green-background); */
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     background-position: center;
-}
+  }
 
 .quotes-article{
     width: 80%;
@@ -610,19 +638,21 @@ h1{
     cursor: pointer;
 }
 
+/* bikinis section */
 
-/* BIKINIS SECTION */
-
-#bikinis{
+#bikinis {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 80vh;
-    background-color: var(--green-background);
+    /* background-color: var(--green-background); */
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--white);
     text-align: center;
-}
+  }
 
 h2{
     font-family: anisette-std, sans-serif;
@@ -681,7 +711,10 @@ h3{
     align-items: center;
     justify-content: center;
     height: 80vh;
-    background-color: var(--green-background);
+    /* background-color: var(--green-background); */
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--white);
     text-align: center;
 }
@@ -791,7 +824,7 @@ h3{
 
 /* SUBSCRIBE SECTION */
 
-#subscribe{
+#subscribe {
     width: 100%;
     height: 70vh;
     display: flex;
@@ -799,11 +832,11 @@ h3{
     align-items: center;
     justify-content: flex-start;
     background-color: var(--green-background);
-    background: url('first-screen/desktop/desktop-bikini4.webp');
+    background: url("first-screen/desktop/desktop-bikini4.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
+  }
 
 .subscribe-article{
     max-width: 60%;
@@ -975,40 +1008,25 @@ footer{
     padding-bottom: 2rem;
 }
 
-}
 
-/* MEDIA QUERY 1050 PX */
-/* MEDIA QUERY 1050 PX */
-/* MEDIA QUERY 1050 PX */
-
-@media only screen and (min-width: 1050px){
     /* HEADER */
 
 header{
     width: 100vw;
-    height: 15vh;
     z-index: 100;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    background-color: var(--green-background);
-}
-
-.white-space{
-    display: none;
+    position: fixed;
+    background-color: var(--green-background-less-opacity);
 }
 
 /* STARDUST LOGO */
 
 .stardust-logo{
-    width: 20rem;
+    width: 15rem;
     padding: 1rem;
-    padding-left: 3rem;
-
-    position:static;
-    max-width: 20%;
+    top: 1rem;
+    left: 2rem;
+    position: absolute;
 }
 
 /* NAV */
@@ -1016,15 +1034,13 @@ header{
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     height: 100%;
-    max-width: 80%;
     font-family: anisette-std, sans-serif;
     font-weight: 400;
     font-style: normal;
     width: 90%;
     color: var(--white);
-    z-index: 500;
 }
 
 /* NAV BUTTON */
@@ -1033,49 +1049,60 @@ nav{
     position: absolute;
     width: 2rem;
     aspect-ratio: 1;
-    top: 1.1rem;
-    right: 2rem;
+    top: 2.5rem;
+    right: 5rem;
     z-index: 200;
     color: var(--black);
     background-color: transparent;
     border: none;
-    display: none;
+    display: block;
 }
 
+.mobile-nav-toggle:hover{
+    cursor: pointer;
+}
+
+.fa-bars{
+    transform: scale(3);
+    color: white;    
+}
 
 /* NAV UL */
 
 #primary-navigation{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     font-family: anisette-std, sans-serif;
     font-weight: 400;
     font-style: normal;
     gap: var(--gap);
-    color: var(--white);
+    color: var(--green-background);
+    background-color: hsl(0% 0% 0% / .75);
+    -webkit-backdrop-filter: blur(1rem); 
+    backdrop-filter: blur(1rem); 
     
-    -webkit-backdrop-filter: none; 
-    backdrop-filter: none; 
-    z-index: 600;
-    text-align: center;
-    transform: translateX(0%);
+    z-index: 100;
+    text-align: left;
+    transform: translateX(120%);
+    transition: transform 350ms ease-out;
+    display: none;
 }
 
 @supports (backdrop-filter: blur(1rem)){
     #primary-navigation{
-        background: none; 
-        backdrop-filter: none;
+        background: hsl(0% 0% 0% / .1); 
+        backdrop-filter: blur(1rem);
     }
 }
 
 /* if NAV UL is actually visible */
 
 #primary-navigation[data-visible="true"]{
-    transform: translateX(0%);
+    transform: translateX(10%);
 }
 
 #primary-navigation > li {
@@ -1091,4 +1118,5 @@ nav{
     background-color: var(--dark-gray);
     cursor: pointer;
 }
+
 }
