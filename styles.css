@@ -406,7 +406,7 @@ h3{
     align-items: center;
     justify-content: flex-start;
     background-color: var(--green-background);
-    background: url('first-screen/mobile/junior.webp');
+    background: url('first-screen/junior/junior-vertical.webp');
     background-position: center;
 }
 
@@ -832,7 +832,7 @@ h3{
     align-items: center;
     justify-content: flex-start;
     background-color: var(--green-background);
-    background: url("first-screen/desktop/desktop-bikini4.webp");
+    background: url('first-screen/pro/pro-horizontal.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
