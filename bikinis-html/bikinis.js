@@ -65,7 +65,7 @@ function handleData(stardustData){
 
 
              // add a link to specific products / add the image of the product
-             rentalClone.querySelector('a').href = `../particular-product/particular-product.html?_id=${bikini._id}`   
+                rentalClone.querySelector('a').href = `../particular-product/particular-product.html?_id=${bikini._id}`   
                 rentalClone.querySelector('img').src = bikini.img;
 
             readyClone.querySelector('a').href = `../particular-product/particular-product.html?_id=${bikini._id}`   

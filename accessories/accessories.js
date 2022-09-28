@@ -61,6 +61,11 @@ function handleData(stardustData){
 
              // add the image of the product
 
+            // add a link to specific products / add the image of the product
+            jewelryClone.querySelector('a').href = `../particular-product/particular-product.html?_id=${accessory._id}`; 
+
+             //  add the image of the product
+
              jewelryClone.querySelector('img').src = accessory.img;
 
 
@@ -90,6 +95,9 @@ function handleData(stardustData){
             // clone it
 
             let shoesClone = shoesTemplate.cloneNode(true);
+
+            // add a link to specific products / add the image of the product
+            shoesClone.querySelector('a').href = `../particular-product/particular-product.html?_id=${accessory._id}`;
 
 
              // add the image of the product
@@ -123,6 +131,9 @@ function handleData(stardustData){
             // clone it
 
             let tanClone = tanTemplate.cloneNode(true);
+
+            // add a link to specific products / add the image of the product
+            tanClone.querySelector('a').href = `../particular-product/particular-product.html?_id=${accessory._id}`;
 
 
              // add the image of the product

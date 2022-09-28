@@ -644,7 +644,7 @@ h1{
 
 .jewelry-template-img{
     max-width: 50%;
-    max-height: auto;
+    max-height: 50%;
     border-radius: 50%;
     margin: 0 auto;
     filter: drop-shadow(1px 4px 5px black);
@@ -711,7 +711,7 @@ h1{
 
 .shoes-template-img{
     max-width: 50%;
-    max-height: auto;
+    max-height: 50%;
     border-radius: 50%;
     margin: 0 auto;
     filter: drop-shadow(1px 4px 5px black);
@@ -778,7 +778,7 @@ h1{
 
 .tan-template-img{
     max-width: 50%;
-    max-height: auto;
+    max-height: 50%;
     border-radius: 10px;
     margin: 0 auto;
     filter: drop-shadow(1px 4px 5px black);
