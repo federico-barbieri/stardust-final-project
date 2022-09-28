@@ -6,46 +6,36 @@ const primaryNav = document.querySelector('#primary-navigation');
 
 const navToggle = document.querySelector('.mobile-nav-toggle');
 
+let num = 0;
+
 navToggle.addEventListener('click', () => {
+    console.log(num);
+    num++;
+    console.log(num);
 
-    const visibility = primaryNav.getAttribute('data-visible');
+    if (num % 2 !== 0 ){
 
-    if(visibility === "false"){
+        // if you click the burger the ul shows goes from translateX 120% to 10%
 
-        // expand and show the navigation
+        primaryNav.style.transform = "translateX(10%)";
+
+        // the ul goes from display none to flex
+
         primaryNav.style.display = "flex";
-        primaryNav.setAttribute('data-visible', true);
-        primaryNav.setAttribute('aria-expanded', true);
 
-        // switch burger menu to an X
+        // the burger turns into a white X and scales from nothing to 2
 
         navToggle.innerHTML = '<i class="fa-solid fa-x"></i>';
         let burgerX = document.querySelector('.fa-x').style.transform = "scale(2)";
         let burgerWhite = document.querySelector('.fa-x').style.color = "white";
+    }
+        else if (num % 2 == 0){
 
-    } else if (visibility === "true"){
+        // the ul goes back to the right and has a display of none
+        // and the X turns into a burger
+
         primaryNav.style.display = "none";
-        primaryNav.setAttribute('data-visible', false);
-        primaryNav.setAttribute('aria-expanded', false);
+        primaryNav.style.transform = "translateX(120%)";
         navToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
     } 
-  //  else if (visibility === "false" && clientWidth > 800){
-  //      primaryNav.style.display = "flex";
-  //  } 
-  //  else if (visibility === "true" && clientWidth > 800){
-  //      primaryNav.style.display = "flex";
-  //  } 
 })
-
-
-
-//
-//
-//
-
-
-
-/// 
-///
-///
-///  
