@@ -27,5 +27,4 @@ console.log(product);
 document.querySelector('.particular-product-img').src = product[0].img;
 document.querySelector('.particular-product-h3').textContent = product[0].Description;
 document.querySelector('.particular-product-p').textContent = "dkk " + product[0].Price;
-
 }

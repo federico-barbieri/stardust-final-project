@@ -59,35 +59,36 @@ function handleData(stardustData){
 
             // clone it
 
-            let clone = rentalTemplate.cloneNode(true);
+            let rentalClone = rentalTemplate.cloneNode(true);
 
             let readyClone = readyTemplate.cloneNode(true);
 
 
-             // add the image of the product
-            readyClone.querySelector('a').href = `../particular-product/particular-product.html?_id=${bikini._id}`
-             clone.querySelector('img').src = bikini.img;
+             // add a link to specific products / add the image of the product
+             rentalClone.querySelector('a').href = `../particular-product/particular-product.html?_id=${bikini._id}`   
+                rentalClone.querySelector('img').src = bikini.img;
 
+            readyClone.querySelector('a').href = `../particular-product/particular-product.html?_id=${bikini._id}`   
              readyClone.querySelector('img').src = bikini.img;
 
 
             // add the name of the product
 
-            clone.querySelector('h3').textContent = bikini.Name; 
+            rentalClone.querySelector('h3').textContent = bikini.Name; 
 
             readyClone.querySelector('h3').textContent = bikini.Name;
             
             // add the price of the product
 
-            clone.querySelector('p').textContent = `${bikini.Price} DKK`; 
+            rentalClone.querySelector('p').textContent = `${bikini.Price} DKK`; 
 
             readyClone.querySelector('p').textContent = `${bikini.Price} DKK`;
 
             // append to parent
 
-            let daddy = document.querySelector(".rentals-grid");
+            let rentalDaddy = document.querySelector(".rentals-grid");
 
-            daddy.appendChild(clone); 
+            rentalDaddy.appendChild(rentalClone); 
 
             let readyDaddy = document.querySelector(".ready-grid");
 
