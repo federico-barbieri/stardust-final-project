@@ -57,7 +57,9 @@ header{
     z-index: 100;
     display: flex;
     position: fixed;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
 }
 
 /* STARDUST LOGO */
@@ -165,7 +167,7 @@ nav{
 .white-space {
     width: 100%;
     height: 15vh;
-    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));
     background-size: 300%;
     animation: bg-animation 25s infinite;
   }
@@ -173,7 +175,7 @@ nav{
 /* MAIN */
 
 main{
-    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));
     background-size: 300%;
     animation: bg-animation 25s infinite;
     width: 100%;
@@ -184,8 +186,11 @@ main{
 
 .white-space{
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     background-color: var(--black);
+    background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
 }
 
 
@@ -201,6 +206,7 @@ main{
     position: relative;
     z-index: 80;
     text-align: left;
+    background-color: var(--dark-gray-less-opacity);
 }
 
 h1{
@@ -242,7 +248,7 @@ h1{
     align-items: center;
     justify-content: center;
     height: 80vh;
-    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));
     background-size: 300%;
     animation: bg-animation 25s infinite;
     color: var(--black);
@@ -441,7 +447,9 @@ h3{
     align-items: center;
     justify-content: center;
     height: 80vh;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--white);
     text-align: center;
 }
@@ -521,7 +529,7 @@ footer{
 .white-space {
     width: 100%;
     height: 15vh;
-    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));
     background-size: 300%;
     animation: bg-animation 25s infinite;
   }
@@ -533,7 +541,9 @@ header{
     z-index: 100;
     display: flex;
     position: fixed;
-    background-color: var(--green-background-less-opacity);
+    background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
 }
 
 /* STARDUST LOGO */
@@ -675,7 +685,9 @@ h1{
     flex-direction: column-reverse;
     justify-content: center;
     height: 100vh;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--black);
     text-align: center;
 }
@@ -890,7 +902,9 @@ h3{
     align-items: center;
     justify-content: center;
     height: 80vh;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--white);
     text-align: center;
 }
