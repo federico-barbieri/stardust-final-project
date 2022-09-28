@@ -563,6 +563,10 @@ nav{
     display: block;
 }
 
+.mobile-nav-toggle:hover{
+    cursor: pointer;
+}
+
 .fa-bars{
     transform: scale(3);
     color: white;
