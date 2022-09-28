@@ -662,7 +662,7 @@ h2{
 
 .scrolling-wrapper {
     display: flex;
-    height: 50vh;
+    height: 55vh;
     max-width: 70%;
     background-color: transparent;
     filter: drop-shadow(1px 4px 5px black);
@@ -677,12 +677,19 @@ h2{
       margin: 2rem auto;
       text-align: center;
       filter: drop-shadow(1px 4px 5px black);
+      z-index: 100;
 }
 
-.card:hover > h3, .bikini-img{
+.bikini-img:hover + h3{
     color: black;
     background-color: white;
     cursor: pointer;
+}
+
+h3:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer; 
 }
 
 .bikini-img{
@@ -691,7 +698,7 @@ h2{
 }
 
 h3{
-    padding-top: 2rem;
+    padding-top: 4rem;
     font-family: anisette-std, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -1023,8 +1030,8 @@ header{
 .stardust-logo{
     width: 15rem;
     padding: 1rem;
-    top: 1rem;
-    left: 2rem;
+    top: 3rem;
+    left: 3rem;
     position: absolute;
 }
 
@@ -1048,8 +1055,8 @@ nav{
     position: absolute;
     width: 2rem;
     aspect-ratio: 1;
-    top: 2.5rem;
-    right: 5rem;
+    top: 5rem;
+    right: 4rem;
     z-index: 200;
     color: var(--black);
     background-color: transparent;
