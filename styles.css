@@ -712,7 +712,7 @@ h3{
     justify-content: center;
     height: 80vh;
     /* background-color: var(--green-background); */
-    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-image: linear-gradient(90deg, var(--green-background-less-opacity), black, var(--green-background-less-opacity));
     background-size: 300%;
     animation: bg-animation 25s infinite;
     color: var(--white);
