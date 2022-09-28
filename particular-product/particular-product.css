@@ -184,7 +184,7 @@ main{
 
 #particular-product{
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -201,10 +201,12 @@ main{
 .go-back-div{
     width: 100%;
     height: 2rem;
-    margin: 0rem auto 0rem 5rem;
+    margin: 2rem auto 1rem 5rem;
     color: var(--white);
     display: inline;
     background-color: transparent;
+    position: absolute;
+    transform: translateY(4rem);
 }
 
 .go-back-btn{
@@ -224,6 +226,7 @@ main{
     z-index: 300;
     text-align: center;
     overflow: hidden;
+    padding-top: 10rem;
 }
 
 .particular-product-img{
@@ -416,7 +419,7 @@ footer{
 
 @media only screen and (min-width: 1000px){
 
-/* whitespace */
+/* whitespace 
 
 .white-space{
     width: 100%;
@@ -424,7 +427,7 @@ footer{
     background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));
     background-size: 300%;
     animation: bg-animation 25s infinite;
-}
+} */
 
 /* FIRST-SCREEN */
 
@@ -432,7 +435,7 @@ footer{
 
 #particular-product{
     width: 100vw;
-    height: 100vh;
+    height: 140vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -455,6 +458,7 @@ footer{
     margin: 2rem auto 2rem auto;
     z-index: 300;
     text-align: center;
+    padding-top: 20rem;
 }
 
 .particular-product-img{
@@ -486,13 +490,14 @@ footer{
 .go-back-div{
     width: 100%;
     height: 2rem;
-    margin: 2rem auto 1rem 5rem;
+    margin: 2rem auto 1rem 8rem;
     color: var(--white);
     display: inline;
     background-color: transparent;
     position: absolute;
-    transform: translateY(-35rem);
+    transform: translateY(-30rem);
 }
+
 
 .go-back-btn{
     background-color: transparent;
@@ -686,15 +691,17 @@ footer{
     padding-bottom: 2rem;
 }
 
-header{
+}
+
+@media only screen and (min-width: 1350px){
+    /* HEADER */
+
+  header{
     width: 100vw;
     height: 15vh;
     z-index: 100;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+    position: fixed;
     background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));
     background-size: 300%;
     animation: bg-animation 25s infinite;
@@ -705,10 +712,9 @@ header{
 .stardust-logo{
     width: 15rem;
     padding: 1rem;
-    top: 0.2rem;
-    left: 2rem;
-    position:static;
-    max-width: 20%;
+    top: 3rem;
+    left: 3rem;
+    position: absolute;
 }
 
 /* NAV */
@@ -716,15 +722,14 @@ header{
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    max-width: 80%;
     font-family: anisette-std, sans-serif;
     font-weight: 400;
     font-style: normal;
-    width: 90%;
+    width: 100%;
     color: var(--white);
-    z-index: 500;
 }
 
 /* NAV BUTTON */
@@ -733,8 +738,8 @@ nav{
     position: absolute;
     width: 2rem;
     aspect-ratio: 1;
-    top: 1.1rem;
-    right: 2rem;
+    top: 5rem;
+    right: 4rem;
     z-index: 200;
     color: var(--black);
     background-color: transparent;
@@ -742,40 +747,45 @@ nav{
     display: none;
 }
 
+.mobile-nav-toggle:hover{
+    cursor: pointer;
+}
+
+.fa-bars{
+    transform: scale(3);
+    color: white;    
+}
 
 /* NAV UL */
 
 #primary-navigation{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    max-width: 100%;
-    height: 100%;
+    width: 100%;
+    height: auto;
     font-family: anisette-std, sans-serif;
     font-weight: 400;
     font-style: normal;
     gap: var(--gap);
-    color: var(--white);
-    
+    color: none;
+    background-color: none;
     -webkit-backdrop-filter: none; 
     backdrop-filter: none; 
-    z-index: 600;
-    text-align: center;
-    transform: translateX(0%);
+    z-index: 100;
+    text-align: right;
+    transform: translateX(10%);
+    transition: none;
+    margin: 1rem 1rem 0 auto;
+  
 }
 
-@supports (backdrop-filter: blur(1rem)){
-    #primary-navigation{
-        background: none; 
-        backdrop-filter: none;
-    }
-}
 
 /* if NAV UL is actually visible */
 
 #primary-navigation[data-visible="true"]{
-    transform: translateX(0%);
+    transform: none;
 }
 
 #primary-navigation > li {
