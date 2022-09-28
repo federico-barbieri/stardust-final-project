@@ -65,7 +65,7 @@ function handleData(stardustData){
 
 
              // add the image of the product
-
+            readyClone.querySelector('a').href = `../particular-product/particular-product.html?_id=${bikini._id}`
              clone.querySelector('img').src = bikini.img;
 
              readyClone.querySelector('img').src = bikini.img;

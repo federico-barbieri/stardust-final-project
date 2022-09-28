@@ -89,10 +89,6 @@ function changeScreen4 () {
         } 
 }
 
-function everything(){
-    timies();
-}
-
 
 function timies(){
     setTimeout(changeScreen1, 3000);
@@ -102,9 +98,11 @@ function timies(){
     setTimeout(everything, 15000);
 }
 
+function everything(){
+    timies();
+}
 
-   
-    setTimeout(timies, 100);
+setTimeout(timies, 100);
 
 
 //
