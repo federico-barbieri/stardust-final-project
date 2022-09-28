@@ -439,7 +439,7 @@ filter: drop-shadow(1px 4px 5px black);
 .tan-template-img{
     max-width: 70%;
     max-height: 70%;
-    border-radius: 50%;
+    border-radius: 10px;
     margin: 0 auto;
     filter: drop-shadow(1px 4px 5px black);
 }
