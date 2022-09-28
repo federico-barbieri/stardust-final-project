@@ -496,6 +496,17 @@ footer{
 
 @media only screen and (min-width: 1000px){
 
+        /* whitespace */
+
+.white-space {
+    width: 100%;
+    height: 15vh;
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
+  }
+
+
 /* HEADER */
 
 header{
