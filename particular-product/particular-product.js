@@ -2,7 +2,7 @@
 
 
 const urlParams = new URLSearchParams(window.location.search);
-const cat = urlParams.get('_id');
+const id = urlParams.get('_id');
 
 const options = { 
     headers: {
@@ -11,8 +11,9 @@ const options = {
 }
 
 
-console.log(cat)
-const url = `https://stardustlab-da2b.restdb.io/rest/products?q={"_id":"${cat}"}`;
+console.log(id)
+
+const url = `https://stardustlab-da2b.restdb.io/rest/products?q={"_id":"${id}"}`;
 
 // fetch the data
 
