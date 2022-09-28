@@ -23,6 +23,18 @@ a{
     text-decoration: none;
 }
 
+@keyframes bg-animation {
+    0% {
+      background-position: left;
+    }
+    50% {
+      background-position: right;
+    }
+    100% {
+      background-position: left;
+    }
+  }
+
 /* CONTAINER */
 
 #container{
@@ -84,6 +96,10 @@ nav{
     display: block;
 }
 
+.mobile-nav-toggle:hover{
+    cursor: pointer;
+}
+
 .fa-bars{
     transform: scale(2);
     color: white;
@@ -142,10 +158,22 @@ nav{
     cursor: pointer;
 }
 
+/* whitespace */
+
+.white-space {
+    width: 100%;
+    height: 15vh;
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
+  }
+
 /* MAIN */
 
 main{
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     width: 100%;
     height: auto;
 }
@@ -239,7 +267,9 @@ filter: drop-shadow(1px 4px 5px black);
     align-items: center;
     justify-content: center;
     height: auto;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--white);
     text-align: center;
 }
@@ -301,7 +331,9 @@ filter: drop-shadow(1px 4px 5px black);
     align-items: center;
     justify-content: center;
     height: auto;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--white);
     text-align: center;
 }
@@ -355,7 +387,7 @@ filter: drop-shadow(1px 4px 5px black);
     font-style: normal;
 }
 
-/* SHOES SECTION */
+/* TAN SECTION */
 
 #tan{
     display: flex;
@@ -363,7 +395,9 @@ filter: drop-shadow(1px 4px 5px black);
     align-items: center;
     justify-content: center;
     height: auto;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--white);
     text-align: center;
 }
@@ -461,6 +495,115 @@ footer{
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 1000px){
+
+/* HEADER */
+
+header{
+    width: 100vw;
+    z-index: 100;
+    display: flex;
+    position: fixed;
+    background-color: var(--green-background-less-opacity);
+}
+
+/* STARDUST LOGO */
+
+.stardust-logo{
+    width: 15rem;
+    padding: 1rem;
+    top: 3rem;
+    left: 3rem;
+    position: absolute;
+}
+
+/* NAV */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: anisette-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 90%;
+    color: var(--white);
+}
+
+/* NAV BUTTON */
+
+.mobile-nav-toggle{
+    position: absolute;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 5rem;
+    right: 4rem;
+    z-index: 200;
+    color: var(--black);
+    background-color: transparent;
+    border: none;
+    display: block;
+}
+
+.fa-bars{
+    transform: scale(3);
+    color: white;
+    
+}
+
+/* NAV UL */
+
+#primary-navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    font-family: anisette-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    gap: var(--gap);
+    color: var(--green-background);
+    background-color: hsl(0% 0% 0% / .75);
+    -webkit-backdrop-filter: blur(1rem); 
+    backdrop-filter: blur(1rem); 
+    
+    z-index: 100;
+    text-align: left;
+    transform: translateX(120%);
+    transition: transform 350ms ease-out;
+    display: none;
+}
+
+@supports (backdrop-filter: blur(1rem)){
+    #primary-navigation{
+        background: hsl(0% 0% 0% / .1); 
+        backdrop-filter: blur(1rem);
+    }
+}
+
+/* if NAV UL is actually visible */
+
+#primary-navigation[data-visible="true"]{
+    transform: translateX(10%);
+}
+
+#primary-navigation > li {
+    list-style: none;
+    text-decoration: none;
+    color: var(--white);
+    padding: 1.5rem 1.5rem;
+    font-size: 1rem;
+}
+
+#primary-navigation > li:hover {
+    color: var(--black);
+    background-color: var(--dark-gray);
+    cursor: pointer;
+}
+
+
 /* FIRST-SCREEN */
 
 #first-screen{
@@ -487,7 +630,7 @@ h1{
     font-weight: 700;
     font-style: normal;
     font-size: 3vw;
-    width: 30%;
+    width: 35%;
     filter: drop-shadow(1px 4px 5px black);
     height: auto;
     margin: 8rem auto 2rem 5rem;
@@ -564,7 +707,9 @@ h1{
     align-items: center;
     justify-content: center;
     height: auto;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--white);
     text-align: center;
 }
@@ -630,7 +775,9 @@ h1{
     align-items: center;
     justify-content: center;
     height: auto;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--white);
     text-align: center;
 }
@@ -695,7 +842,9 @@ h1{
     align-items: center;
     justify-content: center;
     height: auto;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, whitesmoke);
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--white);
     text-align: center;
 }
@@ -740,7 +889,7 @@ h1{
 .tan-template-img{
     max-width: 50%;
     max-height: auto;
-    border-radius: 50%;
+    border-radius: 10px;
     margin: 0 auto;
     filter: drop-shadow(1px 4px 5px black);
 }
@@ -788,116 +937,4 @@ footer{
     padding-bottom: 2rem;
 }
 
-}
-
-/* MEDIA QUERY 1050 PX */
-/* MEDIA QUERY 1050 PX */
-/* MEDIA QUERY 1050 PX */
-
-@media only screen and (min-width: 1200px){
-    /* HEADER */
-
-header{
-    width: 100vw;
-    height: 15vh;
-    z-index: 100;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    background-color: var(--green-background);
-}
-
-/* STARDUST LOGO */
-
-.stardust-logo{
-    width: 15rem;
-    padding: 1rem;
-    top: 0.2rem;
-    left: 2rem;
-    position:static;
-    max-width: 20%;
-}
-
-/* NAV */
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 100%;
-    max-width: 80%;
-    font-family: anisette-std, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    width: 90%;
-    color: var(--white);
-    z-index: 500;
-}
-
-/* NAV BUTTON */
-
-.mobile-nav-toggle{
-    position: absolute;
-    width: 2rem;
-    aspect-ratio: 1;
-    top: 1.1rem;
-    right: 2rem;
-    z-index: 200;
-    color: var(--black);
-    background-color: transparent;
-    border: none;
-    display: none;
-}
-
-
-/* NAV UL */
-
-#primary-navigation{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    height: 100%;
-    font-family: anisette-std, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    gap: var(--gap);
-    color: var(--white);
-    
-    -webkit-backdrop-filter: none; 
-    backdrop-filter: none; 
-    z-index: 600;
-    text-align: center;
-    transform: translateX(0%);
-}
-
-@supports (backdrop-filter: blur(1rem)){
-    #primary-navigation{
-        background: none; 
-        backdrop-filter: none;
-    }
-}
-
-/* if NAV UL is actually visible */
-
-#primary-navigation[data-visible="true"]{
-    transform: translateX(0%);
-}
-
-#primary-navigation > li {
-    list-style: none;
-    text-decoration: none;
-    color: var(--white);
-    padding: 1.5rem 1.5rem;
-    font-size: 1rem;
-}
-
-#primary-navigation > li:hover {
-    color: var(--black);
-    background-color: var(--dark-gray);
-    cursor: pointer;
-}
 }
