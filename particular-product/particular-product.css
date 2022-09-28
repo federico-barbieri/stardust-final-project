@@ -45,7 +45,9 @@ header{
     z-index: 100;
     display: flex;
     position: fixed;
-    background-color: var(--green-background-less-opacity);
+    background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
 }
 
 /* STARDUST LOGO */
@@ -145,10 +147,24 @@ nav{
     cursor: pointer;
 }
 
+@keyframes bg-animation {
+    0% {
+      background-position: left;
+    }
+    50% {
+      background-position: right;
+    }
+    100% {
+      background-position: left;
+    }
+  }
+
 /* MAIN */
 
 main{
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));    
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     width: 100%;
     height: auto;
 }
@@ -157,8 +173,10 @@ main{
 
 .white-space{
     width: 100%;
-    height: 10vh;
-    background-color: var(--black);
+    height: 15vh;
+    background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
 }
 
 
@@ -174,16 +192,19 @@ main{
     position: relative;
     z-index: 80;
     text-align: left;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     overflow: hidden;
 }
 
 .go-back-div{
     width: 100%;
-    display: block;
     height: 2rem;
-    margin: 2rem auto 1rem 5rem;
+    margin: 0rem auto 0rem 5rem;
     color: var(--white);
+    display: inline;
+    background-color: transparent;
 }
 
 .go-back-btn{
@@ -291,7 +312,9 @@ main{
     position: relative;
     z-index: 80;
     text-align: left;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--white);
     overflow: hidden;
 }
@@ -397,8 +420,10 @@ footer{
 
 .white-space{
     width: 100%;
-    height: 10vh;
-    background-color: var(--green-background);
+    height: 15vh;
+    background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
 }
 
 /* FIRST-SCREEN */
@@ -406,7 +431,7 @@ footer{
 /* CARD */
 
 #particular-product{
-    width: 90vw;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -415,9 +440,12 @@ footer{
     position: relative;
     z-index: 80;
     text-align: left;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     margin: 0 auto;
     overflow: hidden;
+    position: relative;
 }
 
 
@@ -460,7 +488,10 @@ footer{
     height: 2rem;
     margin: 2rem auto 1rem 5rem;
     color: var(--white);
-    
+    display: inline;
+    background-color: transparent;
+    position: absolute;
+    transform: translateY(-35rem);
 }
 
 .go-back-btn{
@@ -478,7 +509,7 @@ footer{
 .size-form{
     width: 50%;
     height: 80%;
-    border: 2px solid white;
+    border: none;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -538,8 +569,8 @@ footer{
 /* RELATED SECTION */
 
 #related{
-    width: 80vw;
-    height: 40vh;
+    width: 100vw;
+    height: 50vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -547,15 +578,17 @@ footer{
     position: relative;
     z-index: 80;
     text-align: left;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
     color: var(--white);
     overflow: hidden;
     margin: 0 auto;
 }
 
 .related-h4{
-    width: 50%;
-    margin: 2rem auto 3rem 2rem; 
+    width: 20%;
+    margin: 2rem auto; 
     font-family: anisette-std, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -563,7 +596,7 @@ footer{
 }
 
 .related-imgs{
-    width: 50%;
+    width: 40%;
     height: 50%;
     margin: 0rem auto; 
     display: flex;
@@ -653,15 +686,6 @@ footer{
     padding-bottom: 2rem;
 }
 
-}
-
-/* MEDIA QUERY 1050 PX */
-/* MEDIA QUERY 1050 PX */
-/* MEDIA QUERY 1050 PX */
-
-@media only screen and (min-width: 1200px){
-    /* HEADER */
-
 header{
     width: 100vw;
     height: 15vh;
@@ -671,7 +695,9 @@ header{
     align-items: center;
     justify-content: space-between;
     position: relative;
-    background-color: var(--green-background);
+    background-image: linear-gradient(90deg, var(--green-background), black, var(--green-background-less-opacity));
+    background-size: 300%;
+    animation: bg-animation 25s infinite;
 }
 
 /* STARDUST LOGO */
